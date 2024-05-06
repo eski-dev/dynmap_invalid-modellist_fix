@@ -65,6 +65,6 @@ if __name__ == "__main__":
         else:
             break
 
-    dry_run = input("Do you want to perform a dry run? (y/n): ").lower() == "y"
+    dry_run = input("Do you want to perform a dry run? (y/N): ").lower() == "y"
 
     process_logfile(source_file, target_dir, dry_run)
