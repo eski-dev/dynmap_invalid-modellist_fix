@@ -20,9 +20,9 @@ This python script was created to parse the Minecraft dedicated server logfile, 
 I successfully tested the script on Windows 11 using Python 3.11, then successfully implemenented the script on my Minecraft server running Ubuntu 22.04, with Python 3.10.6.
 
 ## Usage
-At the bottom of the script, define the location of the source logfile and the renderdata directory, either using absolute path or relative path with respect to the location of the python script.
+Simply download the script and run it, you will be prompted to define the location of the source logfile and the renderdata directory, either using an absolute path or the relative path with respect to the location of the python script.
 
-Below that is a dry-run flag, if you want to test (file permissions, paths, etc).
+You will also be able to perform a dry-run, if you want to test (file permissions, paths, etc).
 
 The script will print an output of the mods and the associated target file lines (to be) deleted.
 
