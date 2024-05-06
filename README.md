@@ -33,7 +33,7 @@ eski@minecraft:~$ python3 script.py
 Would delete lines [3, 4, 5, 6] from renderdata/hybrid-aquatic-models.txt in a real run
 ```
 
-Implementatiom Run:
+Implementation Run:
 ```
 eski@minecraft:~$ python3 script.py
 Deleted lines [3, 4, 5, 6] from renderdata/hybrid-aquatic-models.txt
