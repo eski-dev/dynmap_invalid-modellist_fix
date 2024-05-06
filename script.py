@@ -1,6 +1,7 @@
 import os
 
 def process_logfile(source_file, target_dir, dry_run=False):
+
     mod_names_to_delete = {}
 
     with open(source_file, 'r', encoding='utf-8', errors='ignore') as file:
@@ -27,7 +28,6 @@ def process_logfile(source_file, target_dir, dry_run=False):
                 print(f"{target_file} does not exist")
     return mod_names_to_delete
 
-
 def delete_lines(file_path, line_numbers):
     if file_path is None:
         raise ValueError("file_path is null")
@@ -50,10 +50,21 @@ def delete_lines(file_path, line_numbers):
     except IOError as e:
         raise e
 
-source_file = 'latest.log'
-target_dir = 'renderdata'
+if __name__ == "__main__":
+    while True:
+        source_file = input("Enter the path to the log file: ")
+        if not os.path.isfile(source_file) or not source_file.endswith(".log"):
+            print("Invalid log file path. Please enter a valid path to a log file.")
+        else:
+            break
 
-# True to enable dry-run, false to disable
-dry_run = True
+    while True:
+        target_dir = input("Enter the path to the target directory: ")
+        if not os.path.isdir(target_dir):
+            print("Invalid renderdata directory path. Please enter a valid path to the renderdata directory.")
+        else:
+            break
 
-process_logfile(source_file, target_dir, dry_run)
+    dry_run = input("Do you want to perform a dry run? (y/n): ").lower() == "y"
+
+    process_logfile(source_file, target_dir, dry_run)
