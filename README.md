@@ -38,3 +38,7 @@ Implementation Run:
 eski@minecraft:~$ python3 script.py
 Deleted lines [3, 4, 5, 6] from renderdata/hybrid-aquatic-models.txt
 ```
+
+## Disclaimer
+
+This software is provided "as is", without warranty of any kind. The author(s) assume no liability for any damages or issues arising from the use of this software.
