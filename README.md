@@ -13,7 +13,7 @@ I successfully tested the script on Windows 11 using Python 3.11, then successfu
 ## Usage
 Simply download the script and run it. You will be prompted to define the location of the source logfile and the renderdata directory, either using an absolute path or the relative path with respect to the location of the python script.
 
-You will also be able to perform a dry-run, if you want to test (file permissions, paths, etc).
+You can also be able to perform a dry-run, if you want to test (file permissions, paths, etc).
 
 The script will print an output of the mods and the associated target file lines (to be) deleted.
 
